@@ -66,10 +66,11 @@ Highcharts之动态刷新——结合后台数据，flask实现，以内存监�
 
 运行
 ---
-@ubuntu:~$python flask_web.py 监听在8888端口上。
+@ubuntu:~$python flask_web.py 监听在8888端口上。<br>
 @ubuntu:~$python monitor.py 采集数据
 <br>
-访问 http://localhost:8888 就可以看到的监控数据了：效果图如下<br>
-
+访问 http://localhost:8888 就可以看到的监控数据了<br>
+效果图如下
+---
 ![demo1](http://img.blog.csdn.net/20160317215157193?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 ![demo2](http://img.blog.csdn.net/20160317215249348?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
