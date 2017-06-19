@@ -1,12 +1,15 @@
-__author__ = 'pushiqiang'
-import MySQLdb as mysql
+import pymysql as mysql
 import json
 from flask import Flask,request,render_template
 app = Flask(__name__)
 
-db = mysql.connect(user='root',passwd='123',db='falcon',charset='utf8')
+db = mysql.connect(host='10.165.124.46',
+                   port=3306,
+                   user='omptest',
+                   passwd='omptest!@#$',
+                   db='falcon',
+                   charset='utf8')
 db.autocommit(True)
-
 c = db.cursor()
 
 @app.route('/',methods=['GET','POST'])
@@ -34,5 +37,4 @@ def getnew():
     print top
     return json.dumps(top)
 
-
-app.run(port=8888,debug=True)
+app.run(port=9999,debug=True)

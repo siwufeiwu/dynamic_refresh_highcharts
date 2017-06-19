@@ -1,6 +1,4 @@
 #coding=utf-8
-__author__ = 'pushiqiang'
-
 import inspect
 import time
 import urllib, urllib2
@@ -57,7 +55,7 @@ if __name__ == "__main__":
         m = mon()
         data = m.runAllGet()
         print data
-        req = urllib2.Request("http://localhost:8888/", json.dumps(data), {'Content-Type': 'application/json'})
+        req = urllib2.Request("http://localhost:9999/", json.dumps(data), {'Content-Type': 'application/json'})
         f = urllib2.urlopen(req)
         response = f.read()
         print response
